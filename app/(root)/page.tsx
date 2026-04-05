@@ -71,7 +71,7 @@ async function Home() {
         <h2>Take Interviews</h2>
 
         <div className="interviews-section">
-          <p>There are no interviews available</p>
+          {/* <p>There are no interviews available</p> */}
           {hasUpcomingInterviews ? (
             allInterview?.map((interview) => (
               <InterviewCard
@@ -84,9 +84,11 @@ async function Home() {
                 createdAt={interview.createdAt}
               />
             ))
-          ) : (
+          ) 
+          : (
             <p>There are no interviews available</p>
-          )}
+          )
+          }
         </div>
       </section>
     </>

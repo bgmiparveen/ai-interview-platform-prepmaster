@@ -8,7 +8,8 @@ import { auth } from "@/firebase/client";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
-
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -101,8 +102,11 @@ const authFormSchema = (type: FormType) => {
     <div className="card-border lg:min-w-[566px]">
       <div className="flex flex-col gap-6 card py-14 px-10">
         <div className="flex flex-row gap-2 justify-center">
-          <Image src="/logo.svg" alt="logo" height={32} width={38} />
-          <h2 className="text-primary-100">PrepWise</h2>
+         <FontAwesomeIcon
+              icon={faGraduationCap}
+              className="text-indigo-400 h-15 w-15 text-5xl"
+            />
+          <h2 className="text-primary-100 pt-2">PrepWise</h2>
         </div>
 
         <h3>Practice job interviews with AI</h3>
