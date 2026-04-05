@@ -31,7 +31,7 @@ async function Home() {
           </p>
 
           <Button asChild className="btn-primary max-sm:w-full">
-            <Link href="/interview">Start an Interview</Link>
+            <Link href="/interview">Schedule an Interview</Link>
           </Button>
         </div>
 
@@ -48,7 +48,7 @@ async function Home() {
         <h2>Your Interviews</h2>
 
         <div className="interviews-section">
-          <p>You haven&apos;t taken any interviews yet</p>
+          {/* <p>You haven&apos;t taken any interviews yet</p> */}
           {hasPastInterviews ? (
             userInterviews?.map((interview) => (
               <InterviewCard
