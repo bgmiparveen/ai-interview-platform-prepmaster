@@ -2,7 +2,6 @@
 
 import { z } from "zod";
 import Link from "next/link";
-import Image from "next/image";
 import { toast } from "sonner";
 import { auth } from "@/firebase/client";
 import { useForm } from "react-hook-form";
@@ -106,7 +105,7 @@ const authFormSchema = (type: FormType) => {
               icon={faGraduationCap}
               className="text-indigo-400 h-15 w-15 text-5xl"
             />
-          <h2 className="text-primary-100 pt-2">PrepWise</h2>
+          <h2 className="text-primary-100 pt-2">Prep-Master</h2>
         </div>
 
         <h3>Practice job interviews with AI</h3>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ReactNode } from "react";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
